@@ -33,9 +33,12 @@
                 <input class="inputs" id="username" placeholder="Enter your Username" type="text" name="username" required > <br>
                 <input class="inputs" id="password" placeholder="Enter your password" type="password" name="password">
                 <input id="submit-button" type="submit"  name="submit" value="Login"></input>
+                <a href="#" id="forgot-pass">Forgot Password ?</a>
+            <a href="../Register/Register.php"  id="register-button"><p>Register</p></a>
+                
             </form>
-            <a href="#" id="forgot-pass">Forgot Password ?</a>
-            <a href="../Register/Register.php"> <button id="register-button" type="submit" value="submit">Register</button> </a>
+            
+            
         </div>
     </div>
 

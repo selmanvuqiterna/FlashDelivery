@@ -48,19 +48,23 @@ body{
     color: #5117AC;
 }
 
-#form-input{
+#form{
     display: flex;
     flex-direction: column;
     margin-top: 70px;
+   
 }
 
 .inputs{
     margin-top: 20px;
+    margin-left: 50px;
     width: 242px;
     height: 33px;
     border: #5117AC 1px solid;
     border-radius: 10px;
     font-family: "Montserrat" , sans-serif;
+    
+   
     
 }
 
@@ -75,6 +79,8 @@ body{
 #submit-button{
     width: 300px;
     height: 63px;
+    margin-top: 30px;
+    margin-left: 30px;
     background-image: linear-gradient(#472296,#2EC6C0);
     color: white;
     font-size: 18px;
@@ -83,9 +89,7 @@ body{
     border: none;
     border-radius: 15px;
 }
-#password{
-    padding-left: 200px;
-}
+
 #submit-button:hover{
     color: black;
     box-shadow: 4px 4px 4px  rgba(0, 0, 0, 0.5);
@@ -94,7 +98,7 @@ body{
 #register-button{
     width: 300px;
     height: 63px;
-    margin-left: -10px;
+    margin-left: 30px;
     margin-top: 30px;
     background-image: linear-gradient(#472296,#2EC6C0);
     color: white;
@@ -103,6 +107,7 @@ body{
     font-family: "Montserrat", sans-serif;
     border: none;
     border-radius: 15px;
+    text-decoration: none;
     
 }
 #register-button:hover{
@@ -131,5 +136,11 @@ body{
         color:black ;
         font-weight: bold;
     }
-    
+
+    .inputs{
+        margin-left: 650px;
+    }
+    #register-button{
+        margin-left: 615px;
+    }
 }
