@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+   
+}
+#titleLogo{
+    color: #5117AC;
+    margin-left: 40px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+#logoLink{
+    text-decoration: none;
+}
+
+#nav-elements{
+    display: flex;
+    margin-top:-40px;
+    margin-left: 150px;
+    
+}
+.logo-link{
+    
+    width: 30px;
+    height: 30px;
+    
+}
+
+.nav-li{
+    padding-left: 50px;
+    
+}
+.navli{
+    display: none;
+}
+
+#body-part{
+    text-align: center;
+    
+}
+#body-title{
+    margin-top: 100px;
+    font-family: "Montserrat", sans-serif;
+    color: #5117AC;
+}
+
+#form-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    padding-bottom: 40px;
+}
+
+.inputs{
+    margin-top: 20px;
+    width: 242px;
+    height: 33px;
+    border: #5117AC 1px solid;
+    border-radius: 10px;
+    font-family: "Montserrat" , sans-serif;
+    
+}
+
+#forgot-pass{
+    font-family: "Montserrat", sans-serif;
+    color: #97A8AF;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#submit-button{
+    width: 300px;
+    height: 63px;
+    margin-left: 40px;
+    margin-top: 30px;
+    background-image: linear-gradient(#472296,#2EC6C0);
+    color: white;
+    font-size: 18px;
+    font-weight:bold;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 15px;
+}
+#submit-button:hover{
+    color: black;
+    box-shadow: 4px 4px 4px  rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+#register-button{
+    width: 300px;
+    height: 63px;
+    margin-left: -10px;
+    margin-top: 30px;
+    background-image: linear-gradient(#472296,#2EC6C0);
+    color: white;
+    font-size: 18px;
+    font-weight:bold;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 15px;
+    
+}
+#register-button:hover{
+    color: black;
+    box-shadow: 4px 4px 4px  rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+@media screen and (min-width:480px) {
+    #submit-button{
+        margin-left: 615px;
+
+    }
+
+    .nav-li{
+        display: none;
+    }
+    .navli{
+        display: flex;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 600px;
+    }
+    .navli:hover{
+        color:black ;
+        font-weight: bold;
+    }
+    
+}
