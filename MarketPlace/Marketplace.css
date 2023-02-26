@@ -168,6 +168,13 @@ body{
     padding-top: 50px;
     color: #5117AC;
 }
+.textFooter{
+    margin-left: 40px;
+}
+
+#form1{
+    margin-left: 30px;
+}
 
 .formInput{
     width: 70%;
@@ -221,11 +228,17 @@ body{
     .categories{
         margin-left: 600px;
     }
+
+    .categoriesDiv{
+       align-items: center;
+    }
+
     #categoriesBrowse{
         margin-left: 70px;
     }
     .category{
         cursor: pointer;
+        
     }
     .popularsWeb{
     display: block;

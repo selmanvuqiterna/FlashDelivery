@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard</title>
+  <title>FlashDelivery</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
   <nav class="navbar">
-    <a class="navbar-brand" href="dashboard.php">Dashboard</a>
+  <a class="navbar-brand" href="dashboard.php"><h2>Dashboard</h2></a>
   </nav>
+  <h1 id="title2">Edit Foods</h1>
   <div class="container">
-    <h1>Edit foods</h1>
+    
     <?php
               include '../favorites.php';
               $databaseFavorites = new databaseFavourites();
@@ -28,7 +29,7 @@
  
                     $update = $databaseFavorites->update($data);
  
-                    if($updation){
+                    if($update){
                       echo "<script>alert('Food has been updated!');</script>";
                       echo "<script>window.location.href = 'foodD.php';</script>";
                     }else{

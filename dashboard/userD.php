@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard</title>
+  <title>FlashDelivery</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="userD.css">
 </head>
 <body>
   <nav class="navbar">
-    <a class="navbar-brand" href="dashboard.php">Dashboard</a>
+    <a class="navbar-brand" href="dashboard.php"><h1>FlashDelivery User Managing </h1></a>
   </nav>
   <div class="container">
-    <h1>Users</h1>
+    <h1 id="title1">Users</h1>
     
      <a href="addUser.php">  <button type="submit" name="submit" id="userAdd">Add User</button><br> <br> </a> 
     
     <table>
       <thead>
         <tr>
-           <th>ID</th>
+           <th>ID</th>  
           <th>Fullname</th>
           <th>Username</th>
           <th>Email</th>

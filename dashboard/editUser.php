@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard</title>
+  <title>FlashDelivery</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
   <nav class="navbar">
-    <a class="navbar-brand" href="dashboard.php">Dashboard</a>
+    <a class="navbar-brand" href="dashboard.php"><h2>Dashboard</h2></a>
   </nav>
   <div class="container">
-    <h1>Users</h1>
+    <h1>Edit Users</h1>
     <?php
               include '../Register/registration.php';
               $registrationDb = new registrationDb();
@@ -46,19 +46,19 @@
                 }
           ?>
        <form action="" method="post">
-      <label for="fullname">fullname</label>
+      <label for="fullname">Fullname:</label>
       <input type="text" id="name" value="<?php echo $row['fullname']; ?>" name="fullname" required>
-      <label for="username">Username</label>
+      <label for="username">Username:</label>
       <input type="text" id="name" value="<?php echo $row['username']; ?>" name="username" required>
-      <label for="email">Email</label>
+      <label for="email">Email:</label>
       <input type="email" id="email" value="<?php echo $row['email']; ?>" name="email" required>
-      <label for="phone">Phone</label>
+      <label for="phone">Phone:</label>
       <input type="number" id="email" value="<?php echo $row['phone']; ?>" name="phone" required>
-      <label for="password">Password</label>
+      <label for="password">Password:</label>
       <input type="password" id="password" value="<?php echo $row['password']; ?>" name="password" required>
       <select name="privilege" id="selektimi" value="<?php echo $row['privilege']; ?>" required>
-                    <option value="user" name="user">user</option>
-                    <option value="admin" name ="admin">admin</option>
+                    <option value="user" name="user">User</option>
+                    <option value="admin" name ="admin">Admin</option>
             </select><br><br>
     
 

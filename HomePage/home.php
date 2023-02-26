@@ -19,7 +19,7 @@
         <ul id="navElements">
             <a  class="navli" href="../MarketPlace/Marketplace.php">MarketPlace</a>
             <a  class="navli" href="../Login/Login.php">Log In</a>
-            <a class="navli" href="../admin/Login.php"><img id="admin-login" src="user-gear.png"></a>
+            
         
         </ul>
     </div>

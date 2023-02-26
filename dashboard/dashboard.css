@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: floralwhite;
+    background-color: #5117AC;
 }
 
 h1{
@@ -13,6 +13,7 @@ h1{
     display: flex;
     justify-content: center;
     top: 120px;
+    color: white;
 }
 
 .container {
@@ -26,15 +27,23 @@ h1{
 .card {
     margin: 20px;
     padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
-    background-color: #5117AC;
-    min-width: 200px;
-    min-height: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+    border-radius: 15px;
+    background-color: whitesmoke;
+    min-width: 500px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.card:hover{
+    min-width: 530px;
+    min-height: 330px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,1,1);
+    transition: 3ms;
+
 }
 
 .card h2 {
@@ -48,12 +57,71 @@ h1{
     text-align: center;
 }
 
+#goHome{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
 .card a {
-    background-color: #537FE7;
+    background-color: #5117AC;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
     margin-top: 10px;
+}
+
+
+
+.container>form>label{
+    color: white;
+
+}
+
+.container>form>input{
+    border: 2px white solid;
+    border-radius: 10px;
+    width: 190px;
+    height: 30px;
+
+}
+.container>form>select{
+    width: 80px;
+    height:30px ;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+.container>form>button{
+    width: 100px;
+    height:40px ;
+    border: 1px white solid;
+    border-radius: 10px;
+    color: white;
+    background-color: #5117AC;
+    font-weight: bold;
+}
+
+.container>form>button:hover{
+    color: #5117AC;
+    background-color: white;
+    border: #5117AC 1px solid;
+}
+
+.navbar>a{
+text-decoration: none;
+color: white;
+margin-left: 50px;
+
+}
+
+
+
+#home1{
+    color: white;
+    text-decoration: none;
+    
 }

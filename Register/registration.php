@@ -40,7 +40,7 @@ class registrationDb
 
 
 
-    public function enter()
+    public function enter() //insertimi i userave apo regjistrimi
     {
         if (isset($_POST['submit'])) {
 
@@ -68,7 +68,7 @@ class registrationDb
     }
 
 
-    public function enternd()
+    public function enternd()// insertimi i userave
     {
         if (isset($_POST['submit'])) {
 
@@ -97,7 +97,7 @@ class registrationDb
     }
 
 
-    public function fetch()
+    public function fetch() //merr nga databazaa users
     {
         $data = null;
         $query = "SELECT * FROM users";
@@ -110,7 +110,7 @@ class registrationDb
     }
 
 
-    public function reCheck()
+    public function reCheck() // recheck per login  lidhja me databaz
     {
 
         if (isset($_POST['submit'])) {
@@ -135,7 +135,7 @@ class registrationDb
                 } elseif ($row['privilege'] == 'user') {
 
                     echo "<script>alert('Login successful!');</script>";
-                    echo "<script>window.location.href = 'home.php';</script>";
+                    echo "<script>window.location.href = '../Homepage/home.php';</script>";
 
                 }
 
@@ -149,7 +149,7 @@ class registrationDb
     }
 
 
-    public function deletion($id)
+    public function deletion($id) //fshirja e userave
     {
 
         $query = "DELETE FROM users where id = '$id'";
@@ -160,7 +160,7 @@ class registrationDb
         }
     }
 
-    public function edition($id)
+    public function edition($id) //editimi i userave
     {
 
         $data = null;
@@ -174,7 +174,7 @@ class registrationDb
         return $data;
     }
 
-    public function updation($data)
+    public function updation($data) //update i userave
     {
 
         $query = "UPDATE users SET fullname='$data[fullname]', username='$data[username]', email='$data[email]', phone='$data[phone]', password='$data[password]', privilege='$data[privilege]' WHERE id='$data[id] '";

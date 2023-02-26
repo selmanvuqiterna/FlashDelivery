@@ -38,7 +38,7 @@
                 <input class="inputs" placeholder="Password" type="text" id="password" name="password"> <br>
                 <input class="inputs" placeholder="Comfirm your password" type="text" id="confirmPassword" name="confirmPassword">
                 <input  id="register-button" type="submit" name="submit" value="Register"  ></input>
-                <a href="../Login/Login.html" id="forgot-pass" >Already have an account? Login</a>
+                <a href="../Login/Login.php" id="forgot-pass" >Already have an account? Login</a>
                 
             </form>
             

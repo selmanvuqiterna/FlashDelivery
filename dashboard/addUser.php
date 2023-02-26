@@ -8,10 +8,10 @@
 </head>
 <body>
   <nav class="navbar">
-    <a class="navbar-brand" href="dashboard.php">Dashboard</a>
+    <a class="navbar-brand" href="dashboard.php"><h1>Add Users</h1></a>
   </nav>
   <div class="container">
-    <h1>Users</h1>
+    <h1 style="color: #5117AC;">Users</h1>
         <?php
             include '../Register/registration.php';
             $registrationDb = new registrationDb();
@@ -30,8 +30,8 @@
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required>
       <select name="privilege" id="selektimi" required>
-                    <option value="user" name="user">user</option>
-                    <option value="admin" name ="admin">admin</option>
+                    <option value="user" name="user">User</option>
+                    <option value="admin" name ="admin">Admin</option>
             </select><br><br>
     
 
