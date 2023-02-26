@@ -61,7 +61,7 @@ class registrationDb
                     echo "<script>window.location.href = '../Login/Login.php';</script>";
                 } else {
                     echo "<script>alert('This user exists!');</script>";
-                    echo "<script>window.location.href = 'home.php';</script>";
+                    echo "<script>window.location.href = '../Homepage/home.php';</script>";
                 }
             }
         }
@@ -81,16 +81,16 @@ class registrationDb
 
             if ($this->checkEmail()) {
                 echo "<script>alert('The email you entered is registered!')</script>";
-                echo "<script>window.location.href = 'userAdd.php';</script>";
+                echo "<script>window.location.href = '../dashboard/addUser.php';</script>";
                 return;
             } else {
                  $query = "INSERT INTO users(fullname, username, email, phone, password, privilege) VALUES ('$fullname', '$username','$email','$phone', '$password','$privilege')";
                 if ($sql = $this->conn->query($query)) {
                     echo "<script>alert('You are now registered!');</script>";
-                    echo "<script>window.location.href = 'userDashboard.php';</script>";
+                    echo "<script>window.location.href = '../dashboard/userD.php';</script>";
                 } else {
                     echo "<script>alert('This user exists!');</script>";
-                    echo "<script>window.location.href = 'userDashboard.php';</script>";
+                    echo "<script>window.location.href = '../dashboard/userD.php';</script>";
                 }
             }
         }
@@ -131,7 +131,7 @@ class registrationDb
                 if ($row['privilege'] == 'admin') {
 
                     echo "<script>alert('Login successful!');</script>";
-                    echo "<script>window.location.href = 'dashboard.php';</script>";
+                    echo "<script>window.location.href = '../dashboard/dashboard.php';</script>";
                 } elseif ($row['privilege'] == 'user') {
 
                     echo "<script>alert('Login successful!');</script>";

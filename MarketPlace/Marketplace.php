@@ -141,12 +141,20 @@
             <h2 id="footerTitle">Your Favourites</h2>
             <h4 class="textFooter">Here you can add your favourite food or drink</h4>
             <h4 class="textFooter">We will rate them and add to our website</h4>
+
+
             <div id="form1">
-                <form action="">
-                <input class="formInput" type="text" placeholder="Your Favorite Drink" name="" id="drinkForm">
-                <input class="formInput"  type="text" placeholder="Your Favorite Food" name="" id="foodForm">
+            <?php
+            include '../favorites.php';
+            $favorites = new databaseFavourites();
+            $insert = $favorites->insert();
+
+              ?>
+                <form action="" method="POST" >
+                <input class="formInput" type="text" placeholder="Your Favorite Drink" name="drinkForm" id="drinkForm">
+                <input class="formInput"  type="text" placeholder="Your Favorite Food" name="foodForm" id="foodForm"><br><br>
+                <input id="submitButton" type="submit" value="Submit" name="submit">
             </form>
-            <button id="submitButton" type="submit">Submit</button>
             </div>
         </div>
     </div>

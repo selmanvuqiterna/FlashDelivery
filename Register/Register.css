@@ -124,6 +124,10 @@ body{
     #forgot-pass:hover{
         color: black;
     }
+    #forgot-pass{
+        margin-left: -580px;
+        margin-bottom: 50px;
+    }
 }
 
     

@@ -30,7 +30,7 @@
             ?>
         <div id="form-input">
             <form id="form" action="" method="POST" name="myForm" >
-                <input class="inputs" id="username" placeholder="Enter your Username" type="text" name="username" required > <br>
+                <input class="inputs" id="email" placeholder="Enter your Email" type="text" name="email" required > <br>
                 <input class="inputs" id="password" placeholder="Enter your password" type="password" name="password">
                 <input id="submit-button" type="submit"  name="submit" value="Login"></input>
                 <a href="#" id="forgot-pass">Forgot Password ?</a>
